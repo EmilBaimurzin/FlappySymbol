@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="240dp">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/starsView"
+                android:layout_width="300dp"
+                android:layout_height="220dp"
+                android:src="@drawable/bg_zero_stars"/>
+
+            <com.flappy.game.core.library.CustomImageButton
+                android:id="@+id/restartButton"
+                android:src="@drawable/button_restart"
+                android:layout_gravity="bottom"
+                android:layout_width="150dp"
+                android:layout_height="60dp"/>
+
+            <com.flappy.game.core.library.CustomImageButton
+                android:id="@+id/quitButton"
+                android:src="@drawable/button_quit"
+                android:layout_gravity="bottom|end"
+                android:layout_width="150dp"
+                android:layout_height="60dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/distanceTextView"
+            android:layout_marginTop="20dp"
+            style="@style/BasicText"
+            android:textSize="22sp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="6dp"
+            tools:text="1000 M" />
+
+    </LinearLayout>
+</FrameLayout>

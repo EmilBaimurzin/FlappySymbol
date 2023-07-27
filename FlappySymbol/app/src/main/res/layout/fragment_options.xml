@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_game">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/foreground" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="360dp"
+        android:layout_height="330dp"
+        android:background="@drawable/bg_options"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/imgSymbol1"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol01"
+            app:layout_constraintEnd_toStartOf="@+id/imgSymbol2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol1Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol1"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol1"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol1" />
+
+        <ImageView
+            android:id="@+id/imgSymbol2"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol02"
+            app:layout_constraintEnd_toStartOf="@+id/vertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol2Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol2"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol2"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol2" />
+
+        <ImageView
+            android:id="@+id/imgSymbol7"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol07"
+            app:layout_constraintStart_toStartOf="@+id/vertical"
+            app:layout_constraintTop_toTopOf="@+id/imgSymbol6" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol7Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol7"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol7"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol7" />
+
+        <ImageView
+            android:id="@+id/imgSymbol8"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol08"
+            app:layout_constraintStart_toEndOf="@+id/imgSymbol3"
+            app:layout_constraintTop_toTopOf="@+id/imgSymbol7" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol8Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol8"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol8"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol8" />
+
+        <ImageView
+            android:id="@+id/imgSymbol5"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol05"
+            app:layout_constraintEnd_toStartOf="@+id/imgSymbol6"
+            app:layout_constraintTop_toTopOf="@+id/imgSymbol6" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol5Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol5"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol5"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol5" />
+
+        <ImageView
+            android:id="@+id/imgSymbol6"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol06"
+            app:layout_constraintEnd_toStartOf="@+id/vertical"
+            app:layout_constraintTop_toBottomOf="@+id/symbol2Button" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol6Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol6"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol6"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol6" />
+
+        <ImageView
+            android:id="@+id/imgSymbol3"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol03"
+            app:layout_constraintStart_toStartOf="@+id/vertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol3Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol3"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol3"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol3" />
+
+        <ImageView
+            android:id="@+id/imgSymbol4"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_symbol"
+            android:padding="10dp"
+            android:src="@drawable/symbol04"
+            app:layout_constraintStart_toEndOf="@+id/imgSymbol3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.flappy.game.core.library.CustomButton
+            android:id="@+id/symbol4Button"
+            style="@style/BasicText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_distance"
+            android:paddingBottom="3dp"
+            android:text="1000"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgSymbol4"
+            app:layout_constraintStart_toStartOf="@+id/imgSymbol4"
+            app:layout_constraintTop_toBottomOf="@+id/imgSymbol4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.flappy.game.core.library.CustomImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_height="50dp"
+        android:src="@drawable/button_close"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        style="@style/BasicText"
+        tools:text="1000"
+        android:layout_marginBottom="3dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/bg_balance"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
